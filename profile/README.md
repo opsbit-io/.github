@@ -57,8 +57,8 @@ How we partner with engineering teams from initial concept to live production:
 
 | Domain | Industry Standard Tools & Frameworks |
 | :--- | :--- |
-| **DevSecOps & Delivery** | `GitHub Actions` · `GitLab CI` · `Docker` · `Kubernetes` · `ArgoCD` · `JFrog Platform (Artifactory & Xray)` · `Trivy` · `Helm` |
-| **Cloud & Infrastructure** | `AWS` · `Google Cloud (GCP)` · `Microsoft Azure` · `Terraform` · `OpenTofu` |
+| **DevSecOps & Delivery** | `GitHub Actions` · `GitLab CI` · `Docker` · `Kubernetes` · `ArgoCD` · `JFrog Platform (Artifactory & Xray)` · `Fly.io` · `Trivy` · `Helm` |
+| **Cloud & Infrastructure** | `AWS` · `Google Cloud (GCP)` · `Microsoft Azure` · `Fly.io` · `Terraform` · `OpenTofu` |
 | **Web Engineering** | `TypeScript` · `Next.js` · `React` · `Node.js` · `Go` · `Python` · `GraphQL` |
 | **AI & Data Automation** | `OpenAI` · `Anthropic` · `LangChain` · `PostgreSQL` · `Redis` · `Pinecone` |
 
