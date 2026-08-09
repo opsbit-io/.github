@@ -46,7 +46,7 @@ How we partner with engineering teams from initial concept to live production:
 
 | Stage | Focus Area | Key Deliverables |
 | :--- | :--- | :--- |
-| **01. Audit & Architecture** | Multi-Cloud & Security Design | Infrastructure review, Cisco & Zero Trust threat modeling, and target architecture roadmap. |
+| **01. Audit & Architecture** | ☁️ Cloud Environments & Multi-Cloud Infrastructure (AWS, GCP & Azure) | Infrastructure review, Cisco & Zero Trust threat modeling, and target architecture roadmap. |
 | **02. Automate & Secure** | DevSecOps & Perimeter Security | Reproducible IaC, CI/CD pipelines, Cisco/F5/Zscaler/WAF integration, and GitOps controls. |
 | **03. Production & Scale** | Governance & Monitoring | Zero-downtime deployment, real-time observability, and continuous AI data wiring. |
 
