@@ -1,0 +1,83 @@
+<svg width="1200" height="520" viewBox="0 0 1200 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shell" x1="0" y1="0" x2="1200" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#075CFF"/>
+      <stop offset="0.55" stop-color="#05BDF3"/>
+      <stop offset="1" stop-color="#42E47C"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="72" y1="0" x2="626" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#075CFF"/>
+      <stop offset="0.52" stop-color="#05BDF3"/>
+      <stop offset="1" stop-color="#42E47C"/>
+    </linearGradient>
+    <radialGradient id="ambient" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(580 120) rotate(138) scale(420 460)">
+      <stop stop-color="#075CFF" stop-opacity="0.19"/>
+      <stop offset="0.58" stop-color="#05BDF3" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#05BDF3" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="1" y="1" width="1198" height="518" rx="34" fill="#071326" stroke="url(#shell)" stroke-opacity="0.27"/>
+
+  <g font-family="Geist, ui-sans-serif, system-ui, sans-serif">
+    <rect x="22" y="22" width="682" height="476" rx="27" fill="#000A20" stroke="#168DF1" stroke-opacity="0.24"/>
+    <rect x="34" y="34" width="658" height="452" rx="20" fill="#061128"/>
+    <rect x="34" y="34" width="658" height="452" rx="20" fill="url(#ambient)"/>
+
+    <text x="68" y="82" fill="#7C9BBD" font-size="12" font-weight="650" letter-spacing="3.8">CLOUD ENVIRONMENT ENGINEERING</text>
+    <rect x="68" y="107" width="52" height="5" rx="2.5" fill="url(#brand)"/>
+    <text x="68" y="167" fill="#F6F9FF" font-size="39" font-weight="650" letter-spacing="-1.1">Designed. Built. Operated.</text>
+    <text x="68" y="204" fill="#A2B4C9" font-size="17">Secure environments that teams can ship on — and trust.</text>
+
+    <rect x="68" y="244" width="106" height="42" rx="21" fill="#FFFFFF" fill-opacity="0.055" stroke="#075CFF" stroke-opacity="0.38"/>
+    <text x="121" y="270" text-anchor="middle" fill="#DCE8F8" font-size="13" font-weight="700" letter-spacing="1.8">AWS</text>
+    <rect x="184" y="244" width="172" height="42" rx="21" fill="#FFFFFF" fill-opacity="0.055" stroke="#05BDF3" stroke-opacity="0.38"/>
+    <text x="270" y="270" text-anchor="middle" fill="#DCE8F8" font-size="13" font-weight="700" letter-spacing="1.35">GOOGLE CLOUD</text>
+
+    <g font-size="12" font-weight="650" letter-spacing="1.4">
+      <rect x="68" y="327" width="133" height="83" rx="18" fill="#FFFFFF" fill-opacity="0.04" stroke="#168DF1" stroke-opacity="0.18"/>
+      <text x="85" y="357" fill="#6F8EB2">01</text>
+      <text x="85" y="386" fill="#E6EEF9">ASSESS</text>
+      <rect x="211" y="327" width="133" height="83" rx="18" fill="#FFFFFF" fill-opacity="0.04" stroke="#168DF1" stroke-opacity="0.18"/>
+      <text x="228" y="357" fill="#6F8EB2">02</text>
+      <text x="228" y="386" fill="#E6EEF9">DESIGN</text>
+      <rect x="354" y="327" width="133" height="83" rx="18" fill="#FFFFFF" fill-opacity="0.04" stroke="#05BDF3" stroke-opacity="0.2"/>
+      <text x="371" y="357" fill="#6F8EB2">03</text>
+      <text x="371" y="386" fill="#E6EEF9">BUILD</text>
+      <rect x="497" y="327" width="161" height="83" rx="18" fill="#FFFFFF" fill-opacity="0.04" stroke="#42E47C" stroke-opacity="0.22"/>
+      <text x="514" y="357" fill="#6F8EB2">04</text>
+      <text x="514" y="386" fill="#E6EEF9">OPERATE</text>
+    </g>
+    <path d="M86 445H640" stroke="url(#brand)" stroke-opacity="0.34"/>
+    <circle cx="86" cy="445" r="4" fill="#075CFF"/>
+    <circle cx="270" cy="445" r="4" fill="#078CF8"/>
+    <circle cx="455" cy="445" r="4" fill="#05BDF3"/>
+    <circle cx="640" cy="445" r="4" fill="#42E47C"/>
+    <text x="68" y="469" fill="#667F9D" font-size="10" font-weight="650" letter-spacing="2.35">FROM LANDING ZONE TO RELIABLE OPERATIONS</text>
+
+    <rect x="724" y="22" width="454" height="145" rx="25" fill="#000A20" stroke="#168DF1" stroke-opacity="0.22"/>
+    <rect x="736" y="34" width="430" height="121" rx="18" fill="#061128"/>
+    <text x="766" y="73" fill="#6F8EB2" font-size="11" font-weight="650" letter-spacing="3">FOUNDATIONS</text>
+    <text x="766" y="105" fill="#F6F9FF" font-size="22" font-weight="650">Landing zones, networking, IAM</text>
+    <text x="766" y="132" fill="#91A5BE" font-size="14">Organizations · Projects · Policies · Secrets · IaC</text>
+    <circle cx="1121" cy="78" r="17" fill="#075CFF" fill-opacity="0.1" stroke="#05BDF3" stroke-opacity="0.3"/>
+    <path d="M1114 84V73L1121 68L1128 73V84M1118 84V78H1124V84" stroke="#65D9FF" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="724" y="177" width="454" height="145" rx="25" fill="#000A20" stroke="#168DF1" stroke-opacity="0.22"/>
+    <rect x="736" y="189" width="430" height="121" rx="18" fill="#061128"/>
+    <text x="766" y="228" fill="#6F8EB2" font-size="11" font-weight="650" letter-spacing="3">PLATFORMS</text>
+    <text x="766" y="260" fill="#F6F9FF" font-size="22" font-weight="650">Kubernetes, containers, delivery</text>
+    <text x="766" y="287" fill="#91A5BE" font-size="14">EKS · GKE · GitOps · CI/CD · Managed services</text>
+    <circle cx="1121" cy="233" r="17" fill="#05BDF3" fill-opacity="0.1" stroke="#05BDF3" stroke-opacity="0.32"/>
+    <path d="M1113 237L1121 229L1129 237M1117 241H1125" stroke="#6FE8FF" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="724" y="332" width="454" height="166" rx="25" fill="#000A20" stroke="#42E47C" stroke-opacity="0.23"/>
+    <rect x="736" y="344" width="430" height="142" rx="18" fill="#061128"/>
+    <text x="766" y="383" fill="#6F8EB2" font-size="11" font-weight="650" letter-spacing="3">OPERATIONS</text>
+    <text x="766" y="415" fill="#F6F9FF" font-size="22" font-weight="650">Reliability after go-live</text>
+    <text x="766" y="442" fill="#91A5BE" font-size="14">Observability · Security · Cost · Recovery · Upgrades</text>
+    <text x="766" y="466" fill="#91A5BE" font-size="14">Maintenance · Incident readiness · Continuous improvement</text>
+    <circle cx="1121" cy="388" r="17" fill="#42E47C" fill-opacity="0.09" stroke="#42E47C" stroke-opacity="0.32"/>
+    <path d="M1113 388L1118 393L1129 382" stroke="#79F1A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

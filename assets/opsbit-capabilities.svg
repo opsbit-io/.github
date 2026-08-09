@@ -1,0 +1,154 @@
+<svg width="1200" height="500" viewBox="0 0 1200 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="capBorder" x1="0" y1="0" x2="1200" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#075CFF"/>
+      <stop offset="0.5" stop-color="#05BDF3"/>
+      <stop offset="1" stop-color="#42E47C"/>
+    </linearGradient>
+
+    <linearGradient id="cardBgGrad" x1="0" y1="0" x2="0" y2="218" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#051229"/>
+      <stop offset="1" stop-color="#020816"/>
+    </linearGradient>
+
+    <linearGradient id="blueLine" x1="0" y1="0" x2="100" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#075CFF"/>
+      <stop offset="1" stop-color="#05BDF3"/>
+    </linearGradient>
+
+    <linearGradient id="greenLine" x1="0" y1="0" x2="100" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#05BDF3"/>
+      <stop offset="1" stop-color="#42E47C"/>
+    </linearGradient>
+
+    <radialGradient id="iconGlowBlue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="scale(40)">
+      <stop stop-color="#05BDF3" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#05BDF3" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="iconGlowGreen" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="scale(40)">
+      <stop stop-color="#42E47C" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#42E47C" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Container Shell -->
+  <rect x="2" y="2" width="1196" height="496" rx="28" fill="#02050F" stroke="url(#capBorder)" stroke-opacity="0.3" stroke-width="2"/>
+  <rect x="8" y="8" width="1184" height="484" rx="22" fill="#030818"/>
+
+  <g font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+
+    <!-- PANEL 01: DEVSECOPS & DELIVERY -->
+    <g transform="translate(22, 22)">
+      <rect width="566" height="218" rx="22" fill="url(#cardBgGrad)" stroke="#1E4B88" stroke-opacity="0.4" stroke-width="1.5"/>
+      <rect x="36" y="28" width="48" height="4" rx="2" fill="url(#blueLine)"/>
+      <text x="36" y="62" fill="#5F82AB" font-size="11" font-weight="700" letter-spacing="3">01 / AUTOMATE &amp; SECURE</text>
+      <text x="36" y="100" fill="#F4F8FF" font-size="26" font-weight="750">DevSecOps &amp; Delivery</text>
+
+      <!-- Key Capabilities Micro Badges -->
+      <g transform="translate(36, 126)" font-size="11" font-weight="600">
+        <rect x="0" y="0" width="130" height="28" rx="14" fill="#075CFF" fill-opacity="0.12" stroke="#075CFF" stroke-opacity="0.4"/>
+        <text x="65" y="18" fill="#8BB7FF" text-anchor="middle">CI/CD PIPELINES</text>
+
+        <rect x="140" y="0" width="90" height="28" rx="14" fill="#05BDF3" fill-opacity="0.12" stroke="#05BDF3" stroke-opacity="0.4"/>
+        <text x="185" y="18" fill="#75E3FF" text-anchor="middle">GITOPS</text>
+
+        <rect x="240" y="0" width="160" height="28" rx="14" fill="#075CFF" fill-opacity="0.12" stroke="#075CFF" stroke-opacity="0.4"/>
+        <text x="320" y="18" fill="#8BB7FF" text-anchor="middle">SECURITY GATES &amp; JFROG</text>
+      </g>
+      <text x="36" y="182" fill="#8BA4C4" font-size="13" font-weight="400">Automated build, security scanning, GitOps &amp; compliance controls.</text>
+
+      <!-- Icon Disc -->
+      <g transform="translate(506, 68)">
+        <circle r="26" fill="url(#iconGlowBlue)"/>
+        <circle r="22" fill="#04122C" stroke="#05BDF3" stroke-width="1.8"/>
+        <path d="M0 -8L7 -4.5V1C7 5.5 3.5 8 0 9.5C-3.5 8 -7 5.5 -7 1V-4.5L0 -8Z" stroke="#5BF2FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </g>
+
+    <!-- PANEL 02: WEB ENGINEERING -->
+    <g transform="translate(612, 22)">
+      <rect width="566" height="218" rx="22" fill="url(#cardBgGrad)" stroke="#1E4B88" stroke-opacity="0.4" stroke-width="1.5"/>
+      <rect x="36" y="28" width="48" height="4" rx="2" fill="url(#blueLine)"/>
+      <text x="36" y="62" fill="#5F82AB" font-size="11" font-weight="700" letter-spacing="3">02 / CRAFT &amp; BUILD</text>
+      <text x="36" y="100" fill="#F4F8FF" font-size="26" font-weight="750">Web &amp; Digital Products</text>
+
+      <!-- Key Capabilities Micro Badges -->
+      <g transform="translate(36, 126)" font-size="11" font-weight="600">
+        <rect x="0" y="0" width="150" height="28" rx="14" fill="#05BDF3" fill-opacity="0.12" stroke="#05BDF3" stroke-opacity="0.4"/>
+        <text x="75" y="18" fill="#75E3FF" text-anchor="middle">HIGH-PERFORMANCE APPS</text>
+
+        <rect x="160" y="0" width="110" height="28" rx="14" fill="#075CFF" fill-opacity="0.12" stroke="#075CFF" stroke-opacity="0.4"/>
+        <text x="215" y="18" fill="#8BB7FF" text-anchor="middle">MODERN UIS</text>
+
+        <rect x="280" y="0" width="120" height="28" rx="14" fill="#05BDF3" fill-opacity="0.12" stroke="#05BDF3" stroke-opacity="0.4"/>
+        <text x="340" y="18" fill="#75E3FF" text-anchor="middle">API PLATFORMS</text>
+      </g>
+      <text x="36" y="182" fill="#8BA4C4" font-size="13" font-weight="400">Scalable web platforms, modern UI architecture &amp; robust backends.</text>
+
+      <!-- Icon Disc -->
+      <g transform="translate(506, 68)">
+        <circle r="26" fill="url(#iconGlowBlue)"/>
+        <circle r="22" fill="#04122C" stroke="#05BDF3" stroke-width="1.8"/>
+        <path d="M-6 -3L-10 0L-6 3 M6 -3L10 0L6 3 M-2 5L2 -5" stroke="#5BF2FF" stroke-width="1.8" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <!-- PANEL 03: CLOUD INFRASTRUCTURE -->
+    <g transform="translate(22, 260)">
+      <rect width="566" height="218" rx="22" fill="url(#cardBgGrad)" stroke="#19543E" stroke-opacity="0.45" stroke-width="1.5"/>
+      <rect x="36" y="28" width="48" height="4" rx="2" fill="url(#greenLine)"/>
+      <text x="36" y="62" fill="#5F82AB" font-size="11" font-weight="700" letter-spacing="3">03 / FOUNDATION &amp; SCALE</text>
+      <text x="36" y="100" fill="#F4F8FF" font-size="26" font-weight="750">Cloud Infrastructure</text>
+
+      <!-- Key Capabilities Micro Badges -->
+      <g transform="translate(36, 126)" font-size="11" font-weight="600">
+        <rect x="0" y="0" width="165" height="28" rx="14" fill="#28E0A2" fill-opacity="0.12" stroke="#28E0A2" stroke-opacity="0.4"/>
+        <text x="82.5" y="18" fill="#88FAD0" text-anchor="middle">AWS, GCP &amp; AZURE</text>
+
+        <rect x="175" y="0" width="115" height="28" rx="14" fill="#05BDF3" fill-opacity="0.12" stroke="#05BDF3" stroke-opacity="0.4"/>
+        <text x="232.5" y="18" fill="#75E3FF" text-anchor="middle">KUBERNETES</text>
+
+        <rect x="300" y="0" width="130" height="28" rx="14" fill="#28E0A2" fill-opacity="0.12" stroke="#28E0A2" stroke-opacity="0.4"/>
+        <text x="365" y="18" fill="#88FAD0" text-anchor="middle">TERRAFORM &amp; IAC</text>
+      </g>
+      <text x="36" y="182" fill="#8BA4C4" font-size="13" font-weight="400">Multi-cloud landing zones, secure networking &amp; automated scaling.</text>
+
+      <!-- Icon Disc -->
+      <g transform="translate(506, 68)">
+        <circle r="26" fill="url(#iconGlowGreen)"/>
+        <circle r="22" fill="#031A1C" stroke="#28E0A2" stroke-width="1.8"/>
+        <path d="M-6 2C-7.2 2 -8.5 0.8 -8.5 -1C-8.5 -2.8 -6.8 -4 -5 -4C-4.2 -5.8 -2.2 -7 0 -7C2.5 -7 4.5 -5.2 5 -3C6.2 -3 7.5 -1.8 7.5 0C7.5 1.8 6.2 2 5 2Z" stroke="#42E47C" stroke-width="1.8" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <!-- PANEL 04: AI AGENTS & INTEGRATION -->
+    <g transform="translate(612, 260)">
+      <rect width="566" height="218" rx="22" fill="url(#cardBgGrad)" stroke="#19543E" stroke-opacity="0.45" stroke-width="1.5"/>
+      <rect x="36" y="28" width="48" height="4" rx="2" fill="url(#greenLine)"/>
+      <text x="36" y="62" fill="#5F82AB" font-size="11" font-weight="700" letter-spacing="3">04 / INTELLIGENCE &amp; DATA</text>
+      <text x="36" y="100" fill="#F4F8FF" font-size="26" font-weight="750">AI Agents &amp; Integration</text>
+
+      <!-- Key Capabilities Micro Badges -->
+      <g transform="translate(36, 126)" font-size="11" font-weight="600">
+        <rect x="0" y="0" width="160" height="28" rx="14" fill="#42E47C" fill-opacity="0.12" stroke="#42E47C" stroke-opacity="0.4"/>
+        <text x="80" y="18" fill="#9AFDC6" text-anchor="middle">AUTONOMOUS AGENTS</text>
+
+        <rect x="170" y="0" width="125" height="28" rx="14" fill="#05BDF3" fill-opacity="0.12" stroke="#05BDF3" stroke-opacity="0.4"/>
+        <text x="232.5" y="18" fill="#75E3FF" text-anchor="middle">DATA WIRING</text>
+
+        <rect x="305" y="0" width="125" height="28" rx="14" fill="#42E47C" fill-opacity="0.12" stroke="#42E47C" stroke-opacity="0.4"/>
+        <text x="367.5" y="18" fill="#9AFDC6" text-anchor="middle">SMART APIS</text>
+      </g>
+      <text x="36" y="182" fill="#8BA4C4" font-size="13" font-weight="400">Governed AI workflows, enterprise LLM integration &amp; secure data wiring.</text>
+
+      <!-- Icon Disc -->
+      <g transform="translate(506, 68)">
+        <circle r="26" fill="url(#iconGlowGreen)"/>
+        <circle r="22" fill="#031A1C" stroke="#42E47C" stroke-width="1.8"/>
+        <path d="M0 -9L2.5 -2.5L9 0L2.5 2.5L0 9L-2.5 2.5L-9 0L-2.5 -2.5L0 -9Z" fill="#42E47C"/>
+      </g>
+    </g>
+
+  </g>
+</svg>

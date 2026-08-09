@@ -1,0 +1,306 @@
+<svg width="1200" height="520" viewBox="0 0 1200 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Brand Gradients -->
+    <linearGradient id="cardBorderGrad" x1="0" y1="0" x2="1200" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#075CFF"/>
+      <stop offset="0.5" stop-color="#05BDF3"/>
+      <stop offset="1" stop-color="#42E47C"/>
+    </linearGradient>
+
+    <linearGradient id="streamGrad" x1="90" y1="0" x2="1110" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#075CFF"/>
+      <stop offset="0.35" stop-color="#05BDF3"/>
+      <stop offset="0.7" stop-color="#28E0A2"/>
+      <stop offset="1" stop-color="#42E47C"/>
+    </linearGradient>
+
+    <linearGradient id="node3dGrad" x1="0" y1="0" x2="0" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E244A"/>
+      <stop offset="1" stop-color="#040B18"/>
+    </linearGradient>
+
+    <radialGradient id="bgGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 260) scale(500 260)">
+      <stop stop-color="#05BDF3" stop-opacity="0.18"/>
+      <stop offset="0.5" stop-color="#075CFF" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="activeNodeGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="scale(50)">
+      <stop stop-color="#05BDF3" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#05BDF3" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="activeGreenGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="scale(50)">
+      <stop stop-color="#42E47C" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#42E47C" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- OFFICIAL OPSBIT LOGO GRADIENTS -->
+    <linearGradient id="p1_linear" x1="111.387" y1="118.902" x2="322.707" y2="118.902" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0154F9"/>
+      <stop offset="0.119872" stop-color="#015FF9"/>
+      <stop offset="0.471087" stop-color="#01BCF4"/>
+      <stop offset="0.655937" stop-color="#01D1EB"/>
+      <stop offset="0.848182" stop-color="#20DFAE"/>
+      <stop offset="0.999759" stop-color="#60E760"/>
+    </linearGradient>
+    <linearGradient id="p2_linear" x1="111.387" y1="61.7035" x2="213.874" y2="61.7035" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0154F9"/>
+      <stop offset="0.247168" stop-color="#015FF9"/>
+      <stop offset="0.97135" stop-color="#01BCF4"/>
+      <stop offset="1" stop-color="#01BEF3"/>
+    </linearGradient>
+    <linearGradient id="p3_linear" x1="262.612" y1="189.027" x2="322.707" y2="189.027" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0BD5D8"/>
+      <stop offset="0.466139" stop-color="#20DFAE"/>
+      <stop offset="1" stop-color="#60E760"/>
+    </linearGradient>
+    <linearGradient id="p4_linear" x1="190.108" y1="30.2337" x2="215.279" y2="30.2337" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#01A2F5"/>
+      <stop offset="0.827518" stop-color="#01BCF4"/>
+      <stop offset="1" stop-color="#01BEF3"/>
+    </linearGradient>
+    <linearGradient id="p5_linear" x1="84.9484" y1="197.709" x2="246.064" y2="197.709" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0048FA"/>
+      <stop offset="0.321325" stop-color="#015FF9"/>
+      <stop offset="0.78198" stop-color="#01BCF4"/>
+      <stop offset="1" stop-color="#01CFEC"/>
+    </linearGradient>
+    <linearGradient id="p6_linear" x1="195.142" y1="247.072" x2="246.064" y2="247.072" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#01A8F5"/>
+      <stop offset="0.310191" stop-color="#01BCF4"/>
+      <stop offset="1" stop-color="#01CFEC"/>
+    </linearGradient>
+
+    <!-- Filters for Intense Glows -->
+    <filter id="laserGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="reactorBurst" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Master Closed Loop Path for animateMotion (Clockwise 360 Circuit) -->
+    <path id="masterPipelineLoop" d="M 90,210 L 1110,210 C 1170,210 1170,390 1040,390 L 160,390 C 30,390 30,210 90,210 Z"/>
+
+    <!-- PURE OFFICIAL COMPANY LOGO EMBLEM GROUP -->
+    <g id="officialLogoSymbolView" transform="scale(0.14)">
+      <path d="M202.838 53.2635C202.778 53.21 202.719 53.1568 202.659 53.1035C196.446 43.738 191.85 32.8155 190.406 21.6272C190.235 20.4815 190.242 19.2631 190.158 18.1248C189.798 13.2777 191.323 7.13113 197.316 7.20463C202.224 7.2648 211.883 12.0282 215.279 15.3423C219.158 17.7297 224.029 21.981 227.495 25.0525C246.666 42.0425 260.242 63.8333 266.142 88.8313C267.745 95.6295 268.77 101.657 269.155 108.619C269.247 110.275 269.232 120.827 269.625 121.259C271.305 123.113 279.588 128.447 282.195 130.343C286.755 133.654 298.782 143.345 301.09 147.454C312.317 158.747 321.815 183.518 322.68 199.467C323.242 209.803 314.99 214.786 307.91 220.252C295.645 229.725 277.712 232.871 262.612 228.956C261.735 228.947 258.257 228.185 257.312 227.943C240.621 223.677 225.05 214.861 209.532 207.528C206.427 206.06 195.346 200.862 192.931 199.124C189.617 196.725 187.412 193.09 186.815 189.043C186.364 185.97 186.834 182.833 188.165 180.027C189.728 176.654 193.593 172.146 196.018 169.167L207.875 154.723C212.884 148.687 219.255 142.856 217.804 134.194C217.371 131.516 216.234 129 214.511 126.905C211.113 122.787 196.673 113.541 191.57 109.883C184.315 105.413 176.654 100.231 169.469 95.5305C151.972 84.0835 134.618 73.1383 123.198 54.9635C116.981 44.7933 110.127 31.1315 111.586 18.9417C112.377 12.333 121.738 13.063 126.462 14.472C153.053 22.4033 176.647 41.386 195.325 61.3952C201.654 68.1757 209.167 78.3433 213.874 86.216C217.903 91.0493 220.403 99.3995 225.822 102.922C230.209 105.772 234.949 108.024 239.362 110.937C235.635 93.4712 226.83 81.9775 215.089 68.9175C211.252 64.649 205.688 58.0715 202.838 53.2635Z" fill="url(#p1_linear)"/>
+      <path d="M191.57 109.883C184.315 105.413 176.654 100.231 169.469 95.5305C151.972 84.0835 134.618 73.1382 123.198 54.9635C116.981 44.7933 110.127 31.1315 111.586 18.9417C112.377 12.333 121.738 13.063 126.462 14.472C153.053 22.4033 176.647 41.386 195.325 61.3952C201.654 68.1757 209.167 78.3433 213.874 86.216L213.384 86.2922C212.752 85.6047 212.902 85.6375 212.456 84.9285C201.497 67.516 187.414 52.6435 171.433 39.7308C171.319 39.6385 171.131 39.629 170.995 39.612C170.949 40.6908 171.411 42.307 171.303 43.0863C170.974 45.446 170.179 47.5767 170.305 50.037C170.369 51.3027 170.722 52.012 170.908 53.2475C172.377 62.9963 175.374 72.5352 178.168 81.9695C179.566 86.69 182.261 93.0865 182.634 97.8817C183.004 98.1912 183.113 98.2615 183.508 98.5037L183.535 98.7065C183.939 101.609 184.727 101.375 183.433 103.816C184.649 105.633 190.759 107.724 191.57 109.883Z" fill="url(#p2_linear)"/>
+      <path d="M301.09 147.454C312.317 158.747 321.815 183.518 322.68 199.467C323.242 209.803 314.99 214.786 307.91 220.252C295.645 229.726 277.712 232.871 262.612 228.956C265.552 228.002 274.31 231.184 278.562 229.779C279.37 227.454 279.227 225.386 279.652 223.061C281.36 213.722 283.29 206.763 288.082 198.572C290.355 194.689 292.58 189.263 294.987 184.99C298.437 178.869 301.025 171.156 304.443 164.905C304.873 163.782 307.795 160.039 307.953 159.175C308.478 156.258 302.012 150.26 301.09 147.454Z" fill="url(#p3_linear)"/>
+      <path d="M202.838 53.2635C202.778 53.21 202.719 53.1568 202.659 53.1035C196.446 43.738 191.85 32.8155 190.406 21.6272C190.235 20.4815 190.242 19.2631 190.158 18.1248C189.798 13.2777 191.323 7.13113 197.316 7.20463C202.224 7.2648 211.883 12.0282 215.279 15.3423C213.429 15.5935 210.518 11.531 209.08 12.3702C208.724 13.4094 208.622 13.8292 208.434 14.9128L207.925 14.6635C206.344 15.865 203.719 27.8643 203.003 30.4145C201.956 34.0722 200.866 37.718 199.735 41.351C200.013 42.4828 200.521 43.6537 200.335 44.71L199.895 45.3288C198.778 45.181 199.56 44.5345 198.497 44.7158C198.52 46.7603 203.358 51.9922 202.838 53.2635Z" fill="url(#p4_linear)"/>
+      <path d="M254.705 162.323C261.168 163.113 268.175 165.042 273.745 168.505C282.307 173.828 284.55 181.509 286.63 190.818C275.085 188.404 262.682 185.492 258.052 173.615C256.672 170.072 255.228 166.083 254.705 162.323Z" fill="#000A20"/>
+      <path d="M200.538 269.413C200.001 270.08 179.259 282.318 177.074 283.655C173.369 285.923 167.268 286.995 162.846 285.483C157.374 283.608 152.004 279.99 146.9 277.017L124.652 264.073L104.786 252.555C85.8165 241.595 85.0283 241.279 85.0363 219.287L85.0575 199.775L85.059 176.748C85.0408 170.146 84.457 162.609 86.166 156.254C88.263 148.457 94.6963 145.398 100.986 141.542L116.678 131.934L138.498 118.569C145.495 114.281 155.066 106.653 163.361 110.104C171.311 113.411 179.9 119.503 187.496 123.875C189.093 124.793 190.552 126.555 188.494 128.03C183.704 131.461 178.319 134.376 173.208 137.383L139.729 157.448C133.595 161.126 127.401 164.744 121.372 168.586C118.558 170.379 117.848 172.645 117.844 175.895C117.823 189.605 117.874 203.323 117.838 217.033C117.822 223.065 124.03 225.397 128.543 228.014C132.583 230.353 136.607 232.717 140.616 235.107L154.755 243.538C157.817 245.369 165.692 250.735 169.12 249.403C178.104 245.91 186.423 238.778 195.142 234.599C199.235 231.921 206.908 226.802 211.303 225.341C213.002 224.776 214.431 224.537 216.188 224.913C219.441 225.608 244.751 237.781 245.807 239.632C246.062 240.078 246.137 240.681 245.987 241.174C245.696 242.135 243.956 243.158 243.109 243.723C234.997 249.136 226.277 253.93 217.923 258.997L206.525 265.897C204.716 266.987 202.389 268.562 200.538 269.413Z" fill="url(#p5_linear)"/>
+      <path d="M195.142 234.599C199.235 231.921 206.908 226.802 211.303 225.341C213.002 224.776 214.431 224.537 216.188 224.913C219.441 225.608 244.75 237.781 245.807 239.632C246.062 240.078 246.137 240.681 245.987 241.174C245.696 242.135 243.956 243.158 243.109 243.723C234.997 249.136 226.277 253.93 217.923 258.997L206.525 265.897C204.716 266.987 202.389 268.563 200.538 269.413C201.021 268.485 201.482 268.288 202.372 267.733C201.325 267.798 200.745 267.872 199.709 267.672C199.61 266.895 200.895 264.86 201.111 263.44C201.671 258.695 202.065 253.627 202.238 248.863C202.403 244.347 205.393 235.077 204.718 231.133L203.93 230.822C204.061 229.951 205.007 230.306 205.412 229.246C204.543 228.865 197.385 234.578 195.142 234.599Z" fill="url(#p6_linear)"/>
+    </g>
+
+    <style><![CDATA[
+      .spin-tech-ring {
+        animation: spinCore 18s linear infinite;
+        transform-box: fill-box;
+        transform-origin: center;
+      }
+      @keyframes spinCore { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+      @media (prefers-reduced-motion: reduce) {
+        .spin-tech-ring { animation: none !important; }
+      }
+    ]]></style>
+  </defs>
+
+  <!-- Container Box -->
+  <rect x="2" y="2" width="1196" height="516" rx="28" fill="#02050F" stroke="url(#cardBorderGrad)" stroke-opacity="0.35" stroke-width="2"/>
+  <rect x="8" y="8" width="1184" height="504" rx="22" fill="#030818"/>
+
+  <!-- Background Ambient Radial Glow -->
+  <circle cx="600" cy="260" r="320" fill="url(#bgGlow)"/>
+
+  <!-- Top Title Header -->
+  <g font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+    <text x="52" y="48" fill="#5F82AB" font-size="11" font-weight="700" letter-spacing="3.5">CONTINUOUS DELIVERY / ONE CONNECTED PLATFORM</text>
+    <text x="52" y="84" fill="#F4F8FF" font-size="26" font-weight="700" letter-spacing="-0.5">Every change moves through a trusted, automated path.</text>
+
+    <!-- Top Right Official Logo Pill Badge -->
+    <g transform="translate(970, 42)">
+      <rect width="180" height="36" rx="18" fill="#FFFFFF" fill-opacity="0.04" stroke="url(#streamGrad)" stroke-opacity="0.4"/>
+      <g transform="translate(12, -2)">
+        <use href="#officialLogoSymbolView"/>
+      </g>
+      <text x="68" y="22" fill="#F4F8FF" font-size="11" font-weight="700" letter-spacing="1.5">ENGINE</text>
+    </g>
+  </g>
+
+  <!-- MAIN PIPELINE TRACK BASE LINE (x = 90 to 1110, y = 210) -->
+  <line x1="90" y1="210" x2="1110" y2="210" stroke="#0B1A35" stroke-width="14" stroke-linecap="round"/>
+  <line x1="90" y1="210" x2="1110" y2="210" stroke="#12294E" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- RETURN FEEDBACK TRACK BASE LINE -->
+  <path d="M 1110,210 C 1170,210 1170,390 1040,390 L 160,390 C 30,390 30,210 90,210" stroke="#0E2140" stroke-width="4" stroke-dasharray="6 8" stroke-linecap="round"/>
+
+  <!-- FORWARD FLOWING LASER BEAM STREAM (LEFT TO RIGHT: 01 -> 07) -->
+  <line x1="90" y1="210" x2="1110" y2="210" stroke="#5BF2FF" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="40 160" filter="url(#laserGlow)">
+    <animate attributeName="stroke-dashoffset" from="0" to="-400" dur="3s" repeatCount="indefinite"/>
+  </line>
+  <line x1="90" y1="210" x2="1110" y2="210" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-dasharray="20 180">
+    <animate attributeName="stroke-dashoffset" from="0" to="-400" dur="3s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- RETURN FLOWING LASER STREAM (RIGHT TO LEFT RETURN LOOP: 07 -> CORE ENGINE -> 01) -->
+  <path d="M 1110,210 C 1170,210 1170,390 1040,390 L 160,390 C 30,390 30,210 90,210" stroke="#42E47C" stroke-width="3.5" stroke-dasharray="30 130" stroke-linecap="round" filter="url(#laserGlow)">
+    <animate attributeName="stroke-dashoffset" from="320" to="0" dur="4s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- SYNCHRONIZED TRAVELLING ENERGY BEACON (CLOCKWISE 360 CIRCUIT) -->
+  <circle r="8" fill="#5BF2FF" filter="url(#laserGlow)">
+    <animateMotion path="M 90,210 L 1110,210 C 1170,210 1170,390 1040,390 L 160,390 C 30,390 30,210 90,210 Z" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="3.5" fill="#FFFFFF">
+    <animateMotion path="M 90,210 L 1110,210 C 1170,210 1170,390 1040,390 L 160,390 C 30,390 30,210 90,210 Z" dur="6s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- 7 STAGE NODES -->
+
+  <!-- STAGE 01: DEVELOP (x = 90, y = 210) -->
+  <g transform="translate(90, 210)">
+    <circle r="34" fill="url(#activeNodeGlow)"/>
+    <circle r="22" fill="url(#node3dGrad)" stroke="#075CFF" stroke-width="2.5"/>
+    <g transform="translate(0, -32)">
+      <rect x="-14" y="-9" width="28" height="18" rx="9" fill="#040C20" stroke="#075CFF" stroke-width="1.2"/>
+      <text y="4" font-family="Geist, sans-serif" font-size="10" font-weight="700" fill="#7DB0FF" text-anchor="middle">01</text>
+    </g>
+    <!-- Icon: Code < /> -->
+    <path d="M-5 -2L-8 0L-5 2 M5 -2L8 0L5 2 M-1 4L1 -4" stroke="#5BF2FF" stroke-width="1.8" stroke-linecap="round"/>
+    <text y="42" fill="#F0F6FF" font-family="Geist, sans-serif" font-size="13" font-weight="700" text-anchor="middle">Develop</text>
+    <text y="58" fill="#6089B5" font-family="Geist, sans-serif" font-size="10" font-weight="600" text-anchor="middle">CODE &amp; FEAT</text>
+  </g>
+
+  <!-- STAGE 02: BUILD (x = 260, y = 210) -->
+  <g transform="translate(260, 210)">
+    <circle r="34" fill="url(#activeNodeGlow)"/>
+    <circle r="22" fill="url(#node3dGrad)" stroke="#0788FA" stroke-width="2.5"/>
+    <g transform="translate(0, -32)">
+      <rect x="-14" y="-9" width="28" height="18" rx="9" fill="#040C20" stroke="#0788FA" stroke-width="1.2"/>
+      <text y="4" font-family="Geist, sans-serif" font-size="10" font-weight="700" fill="#7DB0FF" text-anchor="middle">02</text>
+    </g>
+    <!-- Icon: Package Box -->
+    <path d="M-6 -3L0 -6L6 -3V4L0 7L-6 4V-3Z M-6 -3L0 1L6 -3 M0 1V7" stroke="#5BF2FF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text y="42" fill="#F0F6FF" font-family="Geist, sans-serif" font-size="13" font-weight="700" text-anchor="middle">Build</text>
+    <text y="58" fill="#6089B5" font-family="Geist, sans-serif" font-size="10" font-weight="600" text-anchor="middle">ARTIFACTS</text>
+  </g>
+
+  <!-- STAGE 03: SCAN (x = 430, y = 210) -->
+  <g transform="translate(430, 210)">
+    <circle r="34" fill="url(#activeNodeGlow)"/>
+    <circle r="22" fill="url(#node3dGrad)" stroke="#05BDF3" stroke-width="2.5"/>
+    <g transform="translate(0, -32)">
+      <rect x="-14" y="-9" width="28" height="18" rx="9" fill="#040C20" stroke="#05BDF3" stroke-width="1.2"/>
+      <text y="4" font-family="Geist, sans-serif" font-size="10" font-weight="700" fill="#7DB0FF" text-anchor="middle">03</text>
+    </g>
+    <!-- Icon: Shield -->
+    <path d="M0 -6L5 -3.5V1C5 4.5 2.5 6.5 0 7.5C-2.5 6.5 -5 4.5 -5 1V-3.5L0 -6Z" stroke="#05BDF3" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text y="42" fill="#F0F6FF" font-family="Geist, sans-serif" font-size="13" font-weight="700" text-anchor="middle">Scan</text>
+    <text y="58" fill="#6089B5" font-family="Geist, sans-serif" font-size="10" font-weight="600" text-anchor="middle">SECURITY</text>
+  </g>
+
+  <!-- STAGE 04: TEST (x = 600, y = 210) -->
+  <g transform="translate(600, 210)">
+    <circle r="34" fill="url(#activeNodeGlow)"/>
+    <circle r="22" fill="url(#node3dGrad)" stroke="#16D6C4" stroke-width="2.5"/>
+    <g transform="translate(0, -32)">
+      <rect x="-14" y="-9" width="28" height="18" rx="9" fill="#040C20" stroke="#16D6C4" stroke-width="1.2"/>
+      <text y="4" font-family="Geist, sans-serif" font-size="10" font-weight="700" fill="#6EF4EA" text-anchor="middle">04</text>
+    </g>
+    <!-- Icon: Check Gate -->
+    <circle r="5" stroke="#16D6C4" stroke-width="1.5" fill="none"/>
+    <path d="M-2 0L-0.5 1.5L2.5 -1.5" stroke="#16D6C4" stroke-width="1.5" stroke-linecap="round"/>
+    <text y="42" fill="#F0F6FF" font-family="Geist, sans-serif" font-size="13" font-weight="700" text-anchor="middle">Test</text>
+    <text y="58" fill="#6089B5" font-family="Geist, sans-serif" font-size="10" font-weight="600" text-anchor="middle">QUALITY GATES</text>
+  </g>
+
+  <!-- STAGE 05: RELEASE (x = 770, y = 210) -->
+  <g transform="translate(770, 210)">
+    <circle r="34" fill="url(#activeGreenGlow)"/>
+    <circle r="22" fill="url(#node3dGrad)" stroke="#28E0A2" stroke-width="2.5"/>
+    <g transform="translate(0, -32)">
+      <rect x="-14" y="-9" width="28" height="18" rx="9" fill="#040C20" stroke="#28E0A2" stroke-width="1.2"/>
+      <text y="4" font-family="Geist, sans-serif" font-size="10" font-weight="700" fill="#88FAD0" text-anchor="middle">05</text>
+    </g>
+    <!-- Icon: Release Tag -->
+    <path d="M-5 -2L0 -6L5 -2V4C5 5.5 4 6.5 2.5 6.5H-2.5C-4 6.5 -5 5.5 -5 4V-2Z" stroke="#28E0A2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text y="42" fill="#F0F6FF" font-family="Geist, sans-serif" font-size="13" font-weight="700" text-anchor="middle">Release</text>
+    <text y="58" fill="#6089B5" font-family="Geist, sans-serif" font-size="10" font-weight="600" text-anchor="middle">GITOPS</text>
+  </g>
+
+  <!-- STAGE 06: DEPLOY (x = 940, y = 210) -->
+  <g transform="translate(940, 210)">
+    <circle r="34" fill="url(#activeGreenGlow)"/>
+    <circle r="22" fill="url(#node3dGrad)" stroke="#36E590" stroke-width="2.5"/>
+    <g transform="translate(0, -32)">
+      <rect x="-14" y="-9" width="28" height="18" rx="9" fill="#040C20" stroke="#36E590" stroke-width="1.2"/>
+      <text y="4" font-family="Geist, sans-serif" font-size="10" font-weight="700" fill="#88FAD0" text-anchor="middle">06</text>
+    </g>
+    <!-- Icon: Cloud -->
+    <path d="M-5 2C-6 2 -7 1 -7 -0.5C-7 -2 -5.5 -3 -4 -3C-3.5 -4.5 -2 -5.5 0 -5.5C2 -5.5 3.5 -4.2 4 -2.5C5 -2.5 6 -1.5 6 0C6 1.5 5 2 4 2Z" stroke="#36E590" stroke-width="1.6" stroke-linecap="round"/>
+    <text y="42" fill="#F0F6FF" font-family="Geist, sans-serif" font-size="13" font-weight="700" text-anchor="middle">Deploy</text>
+    <text y="58" fill="#6089B5" font-family="Geist, sans-serif" font-size="10" font-weight="600" text-anchor="middle">AWS, GCP &amp; AZURE</text>
+  </g>
+
+  <!-- STAGE 07: OBSERVE (x = 1110, y = 210) -->
+  <g transform="translate(1110, 210)">
+    <circle r="34" fill="url(#activeGreenGlow)"/>
+    <circle r="22" fill="url(#node3dGrad)" stroke="#42E47C" stroke-width="2.5"/>
+    <g transform="translate(0, -32)">
+      <rect x="-14" y="-9" width="28" height="18" rx="9" fill="#040C20" stroke="#42E47C" stroke-width="1.2"/>
+      <text y="4" font-family="Geist, sans-serif" font-size="10" font-weight="700" fill="#9AFDC6" text-anchor="middle">07</text>
+    </g>
+    <!-- Icon: Pulse -->
+    <path d="M-6 0H-3L-1 -4L1 4L3 -2L6 0" stroke="#42E47C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text y="42" fill="#F0F6FF" font-family="Geist, sans-serif" font-size="13" font-weight="700" text-anchor="middle">Observe</text>
+    <text y="58" fill="#6089B5" font-family="Geist, sans-serif" font-size="10" font-weight="600" text-anchor="middle">AI METRICS</text>
+  </g>
+
+  <!-- CENTER OFFICIAL COMPANY LOGO REACTOR CARD ON FEEDBACK LOOP (x = 600, y = 390) -->
+  <g transform="translate(600, 390)">
+    <!-- Rotating Tech Ring -->
+    <circle r="46" class="spin-tech-ring" stroke="url(#streamGrad)" stroke-width="1.8" stroke-dasharray="6 12 24 12" fill="none"/>
+    
+    <!-- Pulsing Aura Ring -->
+    <circle r="38" fill="none" stroke="#05BDF3" stroke-width="2" opacity="0.6">
+      <animate attributeName="r" values="34;52;34" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0.1;0.8" dur="3s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Glassmorphic Pill Capsule Container for Pure Official Company Logo -->
+    <rect x="-170" y="-29" width="340" height="58" rx="29" fill="#040D26" stroke="url(#cardBorderGrad)" stroke-width="2" filter="url(#reactorBurst)"/>
+    <rect x="-166" y="-25" width="332" height="50" rx="25" fill="#020816"/>
+
+    <!-- PURE OFFICIAL OPSBIT LOGO EMBLEM -->
+    <g transform="translate(-145, -21)">
+      <use href="#officialLogoSymbolView"/>
+    </g>
+
+    <!-- TAGLINE & ENGINE TITLE -->
+    <g font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" text-anchor="start">
+      <text x="-75" y="1" fill="#F4F8FF" font-size="14" font-weight="750" letter-spacing="2.5">CORE ENGINE</text>
+      <text x="-75" y="18" fill="#5F82AB" font-size="10" font-weight="600" letter-spacing="2">AUTOMATED GOVERNANCE</text>
+    </g>
+
+    <!-- Active Green Status Pulse Dot inside Pill -->
+    <circle cx="130" cy="0" r="4.5" fill="#42E47C" filter="url(#laserGlow)"/>
+  </g>
+
+  <!-- BOTTOM FOOTER LABELS -->
+  <g font-family="Geist, sans-serif" font-size="10" font-weight="600" letter-spacing="2.5" fill="#4B698C">
+    <text x="140" y="455">DEVELOPMENT</text>
+    <text x="1060" y="455" text-anchor="end">PRODUCTION &amp; FEEDBACK</text>
+  </g>
+</svg>
