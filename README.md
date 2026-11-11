@@ -1,18 +1,20 @@
 <div align="center">
-  <img src="./assets/opsbit-hero.svg" alt="OpsBit — We hear it first. Cloud security that listens before things break." width="100%" />
-
-  <br /><br />
-
-  [![DevSecOps](https://img.shields.io/badge/DevSecOps-CI%2FCD%20%26%20Security-16171A?style=for-the-badge&logo=githubactions&logoColor=white&labelColor=2A2C31)](#connected-engineering-disciplines)
-  [![Enterprise Security](https://img.shields.io/badge/Security-Cisco%20%7C%20F5%20%7C%20Zscaler%20%7C%20WAF-16171A?style=for-the-badge&logo=cisco&logoColor=white&labelColor=2A2C31)](#technology-ecosystem)
-  [![Cloud Infrastructure](https://img.shields.io/badge/Cloud-AWS%20%7C%20GCP%20%7C%20Azure-16171A?style=for-the-badge&logo=amazon-aws&logoColor=white&labelColor=2A2C31)](#connected-engineering-disciplines)
-  [![Platform Engineering](https://img.shields.io/badge/Platform-Terraform%20%7C%20Kubernetes-16171A?style=for-the-badge&logo=terraform&logoColor=white&labelColor=2A2C31)](#technology-ecosystem)
-  [![Automation](https://img.shields.io/badge/Automation-Telemetry%20%26%20Data-16171A?style=for-the-badge&logo=grafana&logoColor=white&labelColor=2A2C31)](#connected-engineering-disciplines)
+  <img src="https://raw.githubusercontent.com/opsbit-io/.github/main/brand-2026/opsbit-hero.svg" alt="OpsBit — We hear it first." width="100%" />
 
   <br />
 
-  `100% Infrastructure as Code` &nbsp;&bull;&nbsp; `Zero-Downtime Continuous Delivery` &nbsp;&bull;&nbsp; `Zero Trust Security Governance`
+  <img src="https://raw.githubusercontent.com/opsbit-io/.github/main/brand-2026/opsbit-flowlines.svg" alt="OpsBit Signature FlowLines" width="100%" />
 </div>
+
+<br />
+
+## What We Do
+
+We partner with engineering leaders and executive teams to design, automate, and protect enterprise cloud foundations. No bloat, no generic templates — just deep engineering aligned with business velocity.
+
+- **Cloud & Security**: Resilient, scalable multi-cloud architecture across AWS, GCP, and Azure with strict Zero Trust boundaries and Cisco perimeter defense.
+- **DevSecOps & Automation**: 100% reproducible Infrastructure as Code (Terraform & OpenTofu), GitOps delivery, and automated security gates (JFrog Platform & Trivy).
+- **AI & Platform Engineering**: Practical AI platforms, intelligent event telemetry, and automated observability designed for production scale.
 
 <br />
 
@@ -20,56 +22,21 @@
 
 ## How We Work
 
-Calm, structured, and fast. No unnecessary complexity. We partner with engineering teams from early architectural blueprints to enterprise-scale production.
+Calm, structured, and fast. No unnecessary complexity. A four-stage path from discovery to live production.
 
 <div align="center">
-  <img src="./assets/opsbit-how-we-work.svg" alt="OpsBit 4-Step Pipeline: Listen, Design, Build, Stay Ahead" width="100%" />
-</div>
-
-<br />
-
-| Stage | Focus Area | Deliverables |
-| :--- | :--- | :--- |
-| **01. Listen** | Deep Architecture & Threat Audit | Current-state review, threat modeling, Cisco & Zero Trust evaluation, and uncovering silent friction. |
-| **02. Design** | Resilient Blueprints & Boundaries | Lean multi-cloud topology, strict least privilege boundaries, and production roadmap with zero bloat. |
-| **03. Build** | 100% Infrastructure as Code & GitOps | Reproducible IaC, hardened CI/CD pipelines, automated security scanning, and JFrog artifact controls. |
-| **04. Stay Ahead** | Telemetry, Observability & Scale | Proactive monitoring, automated anomaly detection, and continuous verification before disruptions occur. |
-
-<br />
-
----
-
-## Connected Engineering Disciplines
-
-We bridge the gap between application engineering, multi-cloud platforms, perimeter security, and intelligent automation.
-
-<div align="center">
-  <img src="./assets/opsbit-capabilities.svg" alt="OpsBit Connected Engineering Disciplines: DevSecOps, Enterprise Security, Cloud Topology, Intelligent Automation" width="100%" />
+  <img src="https://raw.githubusercontent.com/opsbit-io/.github/main/brand-2026/opsbit-pipeline.svg" alt="OpsBit 4-Step Pipeline: Listen, Design, Build, Stay Ahead" width="100%" />
 </div>
 
 <br />
 
 ---
 
-## Technology Ecosystem
+## Who We Are
 
-| Domain | Industry Standard Frameworks and Technologies |
-| :--- | :--- |
-| **DevSecOps & Delivery** | GitHub Actions &middot; GitLab CI &middot; Docker &middot; Kubernetes &middot; ArgoCD &middot; JFrog Platform (Artifactory &amp; Xray) &middot; Helm &middot; Trivy &middot; Fly.io |
-| **Network & Enterprise Security** | Cisco Networking &amp; Security &middot; F5 BIG-IP &middot; Zscaler Zero Trust &middot; Web Application Firewall (WAF) &middot; Next-Gen Firewalls (NGFW) &middot; Enterprise SD-WAN &middot; DDoS Mitigation |
-| **Cloud & Infrastructure Architecture** | Amazon Web Services (AWS) &middot; Google Cloud (GCP) &middot; Microsoft Azure &middot; Terraform &middot; OpenTofu &middot; Terragrunt |
-| **Web & Platform Engineering** | TypeScript &middot; Next.js &middot; React &middot; Node.js &middot; Go &middot; Python &middot; GraphQL |
-| **Observability & Intelligent Automation** | OpenTelemetry &middot; Prometheus &middot; Grafana &middot; Datadog &middot; PostgreSQL &middot; Redis &middot; Pinecone |
+**OpsBit** is led by **Eliasaf Abargel**, Founder & Principal Cloud Architect, DevSecOps leader, and AI engineer.
 
-<br />
-
----
-
-## Built for Impact and Reliability
-
-- **Whole-System Ownership**: One connected conversation covering architecture, code, deployment, and cloud operations.
-- **Security as Foundation**: Least privilege, strict trust boundaries, Cisco and Zscaler Zero Trust architecture, and continuous auditability built in.
-- **Production-First Proof**: Observable, scalable, and maintainable systems over fragile one-off fixes.
+We cut through cloud complexity, replace fragile setups with whole-system ownership, and build architectures where zero-trust security and rapid software delivery reinforce each other.
 
 <br />
 
@@ -84,6 +51,10 @@ We bridge the gap between application engineering, multi-cloud platforms, perime
   </p>
 
   <br />
+
+  <img src="https://raw.githubusercontent.com/opsbit-io/.github/main/brand-2026/opsbit-flowlines-mini.svg" alt="OpsBit FlowLines" width="45%" />
+
+  <br /><br />
 
   <sub><strong>OpsBit</strong> &middot; Principal Cloud Architecture &middot; Built with Intent</sub>
 </div>

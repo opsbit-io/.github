@@ -1,0 +1,132 @@
+<svg width="1200" height="250" viewBox="0 0 1200 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pipeBg" x1="0" y1="0" x2="1200" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#16171A"/>
+      <stop offset="100%" stop-color="#111215"/>
+    </linearGradient>
+
+    <linearGradient id="pipeEmber" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF7A1A"/>
+      <stop offset="35%" stop-color="#FF3D7F"/>
+      <stop offset="70%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#05BDF3"/>
+    </linearGradient>
+
+    <filter id="pipeGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes signalMove {
+        0% { stroke-dashoffset: 960; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes nodePulse {
+        0%, 100% { r: 5; opacity: 0.6; }
+        50% { r: 8; opacity: 1; }
+      }
+      .stream-base {
+        stroke: #2A2C31;
+        stroke-width: 1.5;
+        stroke-dasharray: 4 4;
+      }
+      .stream-flow {
+        stroke: url(#pipeEmber);
+        stroke-width: 2;
+        stroke-dasharray: 80 160;
+        animation: signalMove 5s linear infinite;
+      }
+      .np1 { animation: nodePulse 2.5s ease-in-out infinite; animation-delay: 0s; }
+      .np2 { animation: nodePulse 2.5s ease-in-out infinite; animation-delay: 0.6s; }
+      .np3 { animation: nodePulse 2.5s ease-in-out infinite; animation-delay: 1.2s; }
+      .np4 { animation: nodePulse 2.5s ease-in-out infinite; animation-delay: 1.8s; }
+    </style>
+  </defs>
+
+  <!-- Container Box -->
+  <rect x="1" y="1" width="1198" height="248" rx="20" fill="url(#pipeBg)" stroke="#2A2C31" stroke-width="1.5"/>
+
+  <!-- Top Connecting Line Across All 4 Columns -->
+  <g transform="translate(80, 50)">
+    <line x1="40" y1="0" x2="1000" y2="0" class="stream-base"/>
+    <line x1="40" y1="0" x2="1000" y2="0" class="stream-flow" filter="url(#pipeGlow)"/>
+
+    <!-- Nodes at step positions: 40, 360, 680, 1000 -->
+    <g transform="translate(40, 0)">
+      <circle cx="0" cy="0" r="12" fill="#16171A" stroke="#2A2C31" stroke-width="1.5"/>
+      <circle class="np1" cx="0" cy="0" r="5" fill="#FF7A1A" filter="url(#pipeGlow)"/>
+      <circle cx="0" cy="0" r="2.5" fill="#FFFFFF"/>
+    </g>
+
+    <g transform="translate(360, 0)">
+      <circle cx="0" cy="0" r="12" fill="#16171A" stroke="#2A2C31" stroke-width="1.5"/>
+      <circle class="np2" cx="0" cy="0" r="5" fill="#FF3D7F" filter="url(#pipeGlow)"/>
+      <circle cx="0" cy="0" r="2.5" fill="#FFFFFF"/>
+    </g>
+
+    <g transform="translate(680, 0)">
+      <circle cx="0" cy="0" r="12" fill="#16171A" stroke="#2A2C31" stroke-width="1.5"/>
+      <circle class="np3" cx="0" cy="0" r="5" fill="#8B5CF6" filter="url(#pipeGlow)"/>
+      <circle cx="0" cy="0" r="2.5" fill="#FFFFFF"/>
+    </g>
+
+    <g transform="translate(1000, 0)">
+      <circle cx="0" cy="0" r="12" fill="#16171A" stroke="#2A2C31" stroke-width="1.5"/>
+      <circle class="np4" cx="0" cy="0" r="5" fill="#05BDF3" filter="url(#pipeGlow)"/>
+      <circle cx="0" cy="0" r="2.5" fill="#FFFFFF"/>
+    </g>
+  </g>
+
+  <!-- 4 STEPS (Thin Lines and Clean Numbers, No Heavy Cards) -->
+  <g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+
+    <!-- Step 01: Listen -->
+    <g transform="translate(80, 85)">
+      <text x="0" y="20" fill="#6B6E76" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700">01</text>
+      <text x="0" y="50" fill="#FFFFFF" font-size="20" font-weight="750">Listen</text>
+      <text x="0" y="78" fill="#A0A3AB" font-size="13" font-weight="400" line-height="1.5">
+        <tspan x="0" dy="0">Deep architecture audit.</tspan>
+        <tspan x="0" dy="20">Uncovering silent friction</tspan>
+        <tspan x="0" dy="20">and hidden security gaps.</tspan>
+      </text>
+    </g>
+
+    <!-- Step 02: Design -->
+    <g transform="translate(400, 85)">
+      <text x="0" y="20" fill="#6B6E76" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700">02</text>
+      <text x="0" y="50" fill="#FFFFFF" font-size="20" font-weight="750">Design</text>
+      <text x="0" y="78" fill="#A0A3AB" font-size="13" font-weight="400">
+        <tspan x="0" dy="0">Lean blueprints with zero bloat.</tspan>
+        <tspan x="0" dy="20">Resilient multi-cloud patterns</tspan>
+        <tspan x="0" dy="20">and strict Zero Trust boundaries.</tspan>
+      </text>
+    </g>
+
+    <!-- Step 03: Build -->
+    <g transform="translate(720, 85)">
+      <text x="0" y="20" fill="#6B6E76" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700">03</text>
+      <text x="0" y="50" fill="#FFFFFF" font-size="20" font-weight="750">Build</text>
+      <text x="0" y="78" fill="#A0A3AB" font-size="13" font-weight="400">
+        <tspan x="0" dy="0">Fast, high-velocity execution.</tspan>
+        <tspan x="0" dy="20">100% Infrastructure as Code</tspan>
+        <tspan x="0" dy="20">and automated security gates.</tspan>
+      </text>
+    </g>
+
+    <!-- Step 04: Stay ahead -->
+    <g transform="translate(980, 85)">
+      <text x="0" y="20" fill="#6B6E76" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700">04</text>
+      <text x="0" y="50" fill="#FFFFFF" font-size="20" font-weight="750">Stay ahead</text>
+      <text x="0" y="78" fill="#A0A3AB" font-size="13" font-weight="400">
+        <tspan x="0" dy="0">Proactive telemetry and</tspan>
+        <tspan x="0" dy="20">automated observability</tspan>
+        <tspan x="0" dy="20">before disruptions occur.</tspan>
+      </text>
+    </g>
+
+  </g>
+</svg>
