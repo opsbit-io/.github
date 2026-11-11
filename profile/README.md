@@ -1,9 +1,5 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/opsbit-io/.github/main/brand-2026/opsbit-hero.svg" alt="OpsBit — We hear it first." width="100%" />
-
-  <br />
-
-  <img src="https://raw.githubusercontent.com/opsbit-io/.github/main/brand-2026/opsbit-flowlines.svg" alt="OpsBit Signature FlowLines" width="100%" />
 </div>
 
 <br />
