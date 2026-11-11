@@ -1,154 +1,130 @@
-<svg width="1200" height="500" viewBox="0 0 1200 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="490" viewBox="0 0 1200 490" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="capBorder" x1="0" y1="0" x2="1200" y2="500" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#075CFF"/>
-      <stop offset="0.5" stop-color="#05BDF3"/>
-      <stop offset="1" stop-color="#42E47C"/>
+    <linearGradient id="capBg" x1="0" y1="0" x2="1200" y2="490" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#16171A"/>
+      <stop offset="1" stop-color="#111215"/>
     </linearGradient>
 
-    <linearGradient id="cardBgGrad" x1="0" y1="0" x2="0" y2="218" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#051229"/>
-      <stop offset="1" stop-color="#020816"/>
+    <linearGradient id="capBorder" x1="0" y1="0" x2="1200" y2="490" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2A2C31"/>
+      <stop offset="0.5" stop-color="#3A3D45"/>
+      <stop offset="1" stop-color="#2A2C31"/>
     </linearGradient>
 
-    <linearGradient id="blueLine" x1="0" y1="0" x2="100" y2="0" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#075CFF"/>
-      <stop offset="1" stop-color="#05BDF3"/>
+    <linearGradient id="lineOrange" x1="0" y1="0" x2="60" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF7A1A"/>
+      <stop offset="1" stop-color="#FF9E4A"/>
     </linearGradient>
 
-    <linearGradient id="greenLine" x1="0" y1="0" x2="100" y2="0" gradientUnits="userSpaceOnUse">
+    <linearGradient id="linePink" x1="0" y1="0" x2="60" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF3D7F"/>
+      <stop offset="1" stop-color="#FF6B9D"/>
+    </linearGradient>
+
+    <linearGradient id="linePurple" x1="0" y1="0" x2="60" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+
+    <linearGradient id="lineCyan" x1="0" y1="0" x2="60" y2="0" gradientUnits="userSpaceOnUse">
       <stop stop-color="#05BDF3"/>
-      <stop offset="1" stop-color="#42E47C"/>
+      <stop offset="1" stop-color="#38BDF8"/>
     </linearGradient>
-
-    <radialGradient id="iconGlowBlue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="scale(40)">
-      <stop stop-color="#05BDF3" stop-opacity="0.35"/>
-      <stop offset="1" stop-color="#05BDF3" stop-opacity="0"/>
-    </radialGradient>
-
-    <radialGradient id="iconGlowGreen" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="scale(40)">
-      <stop stop-color="#42E47C" stop-opacity="0.35"/>
-      <stop offset="1" stop-color="#42E47C" stop-opacity="0"/>
-    </radialGradient>
   </defs>
 
-  <!-- Container Shell -->
-  <rect x="2" y="2" width="1196" height="496" rx="28" fill="#02050F" stroke="url(#capBorder)" stroke-opacity="0.3" stroke-width="2"/>
-  <rect x="8" y="8" width="1184" height="484" rx="22" fill="#030818"/>
+  <!-- Container Box -->
+  <rect x="1" y="1" width="1198" height="488" rx="20" fill="url(#capBg)" stroke="url(#capBorder)" stroke-width="1.5"/>
 
-  <g font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
-
-    <!-- PANEL 01: DEVSECOPS & DELIVERY -->
-    <g transform="translate(22, 22)">
-      <rect width="566" height="218" rx="22" fill="url(#cardBgGrad)" stroke="#1E4B88" stroke-opacity="0.4" stroke-width="1.5"/>
-      <rect x="36" y="28" width="48" height="4" rx="2" fill="url(#blueLine)"/>
-      <text x="36" y="62" fill="#5F82AB" font-size="11" font-weight="700" letter-spacing="3">01 / AUTOMATE &amp; SECURE</text>
-      <text x="36" y="100" fill="#F4F8FF" font-size="26" font-weight="750">DevSecOps &amp; Delivery</text>
-
-      <!-- Key Capabilities Micro Badges -->
-      <g transform="translate(36, 126)" font-size="11" font-weight="600">
-        <rect x="0" y="0" width="130" height="28" rx="14" fill="#075CFF" fill-opacity="0.12" stroke="#075CFF" stroke-opacity="0.4"/>
-        <text x="65" y="18" fill="#8BB7FF" text-anchor="middle">CI/CD PIPELINES</text>
-
-        <rect x="140" y="0" width="90" height="28" rx="14" fill="#05BDF3" fill-opacity="0.12" stroke="#05BDF3" stroke-opacity="0.4"/>
-        <text x="185" y="18" fill="#75E3FF" text-anchor="middle">GITOPS</text>
-
-        <rect x="240" y="0" width="160" height="28" rx="14" fill="#075CFF" fill-opacity="0.12" stroke="#075CFF" stroke-opacity="0.4"/>
-        <text x="320" y="18" fill="#8BB7FF" text-anchor="middle">SECURITY GATES &amp; JFROG</text>
-      </g>
-      <text x="36" y="182" fill="#8BA4C4" font-size="13" font-weight="400">Automated build, security scanning, GitOps &amp; compliance controls.</text>
-
-      <!-- Icon Disc -->
-      <g transform="translate(506, 68)">
-        <circle r="26" fill="url(#iconGlowBlue)"/>
-        <circle r="22" fill="#04122C" stroke="#05BDF3" stroke-width="1.8"/>
-        <path d="M0 -8L7 -4.5V1C7 5.5 3.5 8 0 9.5C-3.5 8 -7 5.5 -7 1V-4.5L0 -8Z" stroke="#5BF2FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-      </g>
+  <g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+    <!-- Section Header -->
+    <g transform="translate(48, 38)">
+      <text x="0" y="0" fill="#6B6E76" font-size="11" font-weight="700" letter-spacing="2.5">ENGINEERING DISCIPLINES</text>
+      <text x="0" y="26" fill="#FFFFFF" font-size="22" font-weight="800" letter-spacing="-0.5">Whole-system architecture across cloud, delivery, security, and data.</text>
     </g>
 
-    <!-- PANEL 02: WEB ENGINEERING -->
-    <g transform="translate(612, 22)">
-      <rect width="566" height="218" rx="22" fill="url(#cardBgGrad)" stroke="#1E4B88" stroke-opacity="0.4" stroke-width="1.5"/>
-      <rect x="36" y="28" width="48" height="4" rx="2" fill="url(#blueLine)"/>
-      <text x="36" y="62" fill="#5F82AB" font-size="11" font-weight="700" letter-spacing="3">02 / CRAFT &amp; BUILD</text>
-      <text x="36" y="100" fill="#F4F8FF" font-size="26" font-weight="750">Web &amp; Digital Products</text>
+    <!-- 4 PANELS GRID (2x2) -->
+    
+    <!-- PANEL 01: DevSecOps & Delivery -->
+    <g transform="translate(48, 92)">
+      <rect width="536" height="174" rx="16" fill="#1D1F24" stroke="#2A2C31" stroke-width="1.2"/>
+      <rect x="28" y="24" width="40" height="3" rx="1.5" fill="url(#lineOrange)"/>
+      <text x="28" y="52" fill="#6B6E76" font-size="11" font-weight="700" letter-spacing="2">01 / AUTOMATE &amp; SECURE</text>
+      <text x="28" y="82" fill="#FFFFFF" font-size="20" font-weight="750">DevSecOps &amp; Continuous Delivery</text>
 
-      <!-- Key Capabilities Micro Badges -->
-      <g transform="translate(36, 126)" font-size="11" font-weight="600">
-        <rect x="0" y="0" width="150" height="28" rx="14" fill="#05BDF3" fill-opacity="0.12" stroke="#05BDF3" stroke-opacity="0.4"/>
-        <text x="75" y="18" fill="#75E3FF" text-anchor="middle">HIGH-PERFORMANCE APPS</text>
+      <g transform="translate(28, 102)" font-size="11" font-weight="600">
+        <rect x="0" y="0" width="124" height="26" rx="13" fill="#16171A" stroke="#2A2C31"/>
+        <text x="62" y="17" fill="#A0A3AB" text-anchor="middle">CI/CD PIPELINES</text>
 
-        <rect x="160" y="0" width="110" height="28" rx="14" fill="#075CFF" fill-opacity="0.12" stroke="#075CFF" stroke-opacity="0.4"/>
-        <text x="215" y="18" fill="#8BB7FF" text-anchor="middle">MODERN UIS</text>
+        <rect x="134" y="0" width="86" height="26" rx="13" fill="#16171A" stroke="#2A2C31"/>
+        <text x="177" y="17" fill="#A0A3AB" text-anchor="middle">GITOPS</text>
 
-        <rect x="280" y="0" width="120" height="28" rx="14" fill="#05BDF3" fill-opacity="0.12" stroke="#05BDF3" stroke-opacity="0.4"/>
-        <text x="340" y="18" fill="#75E3FF" text-anchor="middle">API PLATFORMS</text>
+        <rect x="230" y="0" width="176" height="26" rx="13" fill="#16171A" stroke="#2A2C31"/>
+        <text x="318" y="17" fill="#A0A3AB" text-anchor="middle">JFROG PLATFORM &amp; XRAY</text>
       </g>
-      <text x="36" y="182" fill="#8BA4C4" font-size="13" font-weight="400">Scalable web platforms, modern UI architecture &amp; robust backends.</text>
-
-      <!-- Icon Disc -->
-      <g transform="translate(506, 68)">
-        <circle r="26" fill="url(#iconGlowBlue)"/>
-        <circle r="22" fill="#04122C" stroke="#05BDF3" stroke-width="1.8"/>
-        <path d="M-6 -3L-10 0L-6 3 M6 -3L10 0L6 3 M-2 5L2 -5" stroke="#5BF2FF" stroke-width="1.8" stroke-linecap="round"/>
-      </g>
+      <text x="28" y="150" fill="#6B6E76" font-size="13" font-weight="400">Automated build, artifact governance, security scanning, and GitOps controls.</text>
     </g>
 
-    <!-- PANEL 03: CLOUD INFRASTRUCTURE -->
-    <g transform="translate(22, 260)">
-      <rect width="566" height="218" rx="22" fill="url(#cardBgGrad)" stroke="#19543E" stroke-opacity="0.45" stroke-width="1.5"/>
-      <rect x="36" y="28" width="48" height="4" rx="2" fill="url(#greenLine)"/>
-      <text x="36" y="62" fill="#5F82AB" font-size="11" font-weight="700" letter-spacing="3">03 / FOUNDATION &amp; SCALE</text>
-      <text x="36" y="100" fill="#F4F8FF" font-size="26" font-weight="750">Cloud Infrastructure</text>
+    <!-- PANEL 02: Enterprise Security & Zero Trust -->
+    <g transform="translate(616, 92)">
+      <rect width="536" height="174" rx="16" fill="#1D1F24" stroke="#2A2C31" stroke-width="1.2"/>
+      <rect x="28" y="24" width="40" height="3" rx="1.5" fill="url(#linePink)"/>
+      <text x="28" y="52" fill="#6B6E76" font-size="11" font-weight="700" letter-spacing="2">02 / PERIMETER &amp; NETWORK</text>
+      <text x="28" y="82" fill="#FFFFFF" font-size="20" font-weight="750">Enterprise Security &amp; Zero Trust</text>
 
-      <!-- Key Capabilities Micro Badges -->
-      <g transform="translate(36, 126)" font-size="11" font-weight="600">
-        <rect x="0" y="0" width="165" height="28" rx="14" fill="#28E0A2" fill-opacity="0.12" stroke="#28E0A2" stroke-opacity="0.4"/>
-        <text x="82.5" y="18" fill="#88FAD0" text-anchor="middle">AWS, GCP &amp; AZURE</text>
+      <g transform="translate(28, 102)" font-size="11" font-weight="600">
+        <rect x="0" y="0" width="156" height="26" rx="13" fill="#16171A" stroke="#2A2C31"/>
+        <text x="78" y="17" fill="#A0A3AB" text-anchor="middle">CISCO NETWORKING</text>
 
-        <rect x="175" y="0" width="115" height="28" rx="14" fill="#05BDF3" fill-opacity="0.12" stroke="#05BDF3" stroke-opacity="0.4"/>
-        <text x="232.5" y="18" fill="#75E3FF" text-anchor="middle">KUBERNETES</text>
+        <rect x="166" y="0" width="94" height="26" rx="13" fill="#16171A" stroke="#2A2C31"/>
+        <text x="213" y="17" fill="#A0A3AB" text-anchor="middle">F5 BIG-IP</text>
 
-        <rect x="300" y="0" width="130" height="28" rx="14" fill="#28E0A2" fill-opacity="0.12" stroke="#28E0A2" stroke-opacity="0.4"/>
-        <text x="365" y="18" fill="#88FAD0" text-anchor="middle">TERRAFORM &amp; IAC</text>
+        <rect x="270" y="0" width="146" height="26" rx="13" fill="#16171A" stroke="#2A2C31"/>
+        <text x="343" y="17" fill="#A0A3AB" text-anchor="middle">ZSCALER ZERO TRUST</text>
       </g>
-      <text x="36" y="182" fill="#8BA4C4" font-size="13" font-weight="400">Multi-cloud landing zones, secure networking &amp; automated scaling.</text>
-
-      <!-- Icon Disc -->
-      <g transform="translate(506, 68)">
-        <circle r="26" fill="url(#iconGlowGreen)"/>
-        <circle r="22" fill="#031A1C" stroke="#28E0A2" stroke-width="1.8"/>
-        <path d="M-6 2C-7.2 2 -8.5 0.8 -8.5 -1C-8.5 -2.8 -6.8 -4 -5 -4C-4.2 -5.8 -2.2 -7 0 -7C2.5 -7 4.5 -5.2 5 -3C6.2 -3 7.5 -1.8 7.5 0C7.5 1.8 6.2 2 5 2Z" stroke="#42E47C" stroke-width="1.8" stroke-linecap="round"/>
-      </g>
+      <text x="28" y="150" fill="#6B6E76" font-size="13" font-weight="400">Strict perimeter defense, WAF, Next-Gen Firewalls, and Zero Trust architecture.</text>
     </g>
 
-    <!-- PANEL 04: AI AGENTS & INTEGRATION -->
-    <g transform="translate(612, 260)">
-      <rect width="566" height="218" rx="22" fill="url(#cardBgGrad)" stroke="#19543E" stroke-opacity="0.45" stroke-width="1.5"/>
-      <rect x="36" y="28" width="48" height="4" rx="2" fill="url(#greenLine)"/>
-      <text x="36" y="62" fill="#5F82AB" font-size="11" font-weight="700" letter-spacing="3">04 / INTELLIGENCE &amp; DATA</text>
-      <text x="36" y="100" fill="#F4F8FF" font-size="26" font-weight="750">AI Agents &amp; Integration</text>
+    <!-- PANEL 03: Cloud & Platform Infrastructure -->
+    <g transform="translate(48, 282)">
+      <rect width="536" height="174" rx="16" fill="#1D1F24" stroke="#2A2C31" stroke-width="1.2"/>
+      <rect x="28" y="24" width="40" height="3" rx="1.5" fill="url(#linePurple)"/>
+      <text x="28" y="52" fill="#6B6E76" font-size="11" font-weight="700" letter-spacing="2">03 / MULTI-CLOUD TOPOLOGY</text>
+      <text x="28" y="82" fill="#FFFFFF" font-size="20" font-weight="750">Cloud &amp; Platform Architecture</text>
 
-      <!-- Key Capabilities Micro Badges -->
-      <g transform="translate(36, 126)" font-size="11" font-weight="600">
-        <rect x="0" y="0" width="160" height="28" rx="14" fill="#42E47C" fill-opacity="0.12" stroke="#42E47C" stroke-opacity="0.4"/>
-        <text x="80" y="18" fill="#9AFDC6" text-anchor="middle">AUTONOMOUS AGENTS</text>
+      <g transform="translate(28, 102)" font-size="11" font-weight="600">
+        <rect x="0" y="0" width="70" height="26" rx="13" fill="#16171A" stroke="#2A2C31"/>
+        <text x="35" y="17" fill="#A0A3AB" text-anchor="middle">AWS</text>
 
-        <rect x="170" y="0" width="125" height="28" rx="14" fill="#05BDF3" fill-opacity="0.12" stroke="#05BDF3" stroke-opacity="0.4"/>
-        <text x="232.5" y="18" fill="#75E3FF" text-anchor="middle">DATA WIRING</text>
+        <rect x="80" y="0" width="128" height="26" rx="13" fill="#16171A" stroke="#2A2C31"/>
+        <text x="144" y="17" fill="#A0A3AB" text-anchor="middle">GOOGLE CLOUD</text>
 
-        <rect x="305" y="0" width="125" height="28" rx="14" fill="#42E47C" fill-opacity="0.12" stroke="#42E47C" stroke-opacity="0.4"/>
-        <text x="367.5" y="18" fill="#9AFDC6" text-anchor="middle">SMART APIS</text>
+        <rect x="218" y="0" width="80" height="26" rx="13" fill="#16171A" stroke="#2A2C31"/>
+        <text x="258" y="17" fill="#A0A3AB" text-anchor="middle">AZURE</text>
+
+        <rect x="308" y="0" width="148" height="26" rx="13" fill="#16171A" stroke="#2A2C31"/>
+        <text x="382" y="17" fill="#A0A3AB" text-anchor="middle">TERRAFORM / TOFU</text>
       </g>
-      <text x="36" y="182" fill="#8BA4C4" font-size="13" font-weight="400">Governed AI workflows, enterprise LLM integration &amp; secure data wiring.</text>
-
-      <!-- Icon Disc -->
-      <g transform="translate(506, 68)">
-        <circle r="26" fill="url(#iconGlowGreen)"/>
-        <circle r="22" fill="#031A1C" stroke="#42E47C" stroke-width="1.8"/>
-        <path d="M0 -9L2.5 -2.5L9 0L2.5 2.5L0 9L-2.5 2.5L-9 0L-2.5 -2.5L0 -9Z" fill="#42E47C"/>
-      </g>
+      <text x="28" y="150" fill="#6B6E76" font-size="13" font-weight="400">100% reproducible Infrastructure as Code, scalable compute, and resilient networking.</text>
     </g>
 
+    <!-- PANEL 04: Intelligent Automation & Observability -->
+    <g transform="translate(616, 282)">
+      <rect width="536" height="174" rx="16" fill="#1D1F24" stroke="#2A2C31" stroke-width="1.2"/>
+      <rect x="28" y="24" width="40" height="3" rx="1.5" fill="url(#lineCyan)"/>
+      <text x="28" y="52" fill="#6B6E76" font-size="11" font-weight="700" letter-spacing="2">04 / OBSERVABILITY &amp; AGENTS</text>
+      <text x="28" y="82" fill="#FFFFFF" font-size="20" font-weight="750">Intelligent Automation &amp; Scale</text>
+
+      <g transform="translate(28, 102)" font-size="11" font-weight="600">
+        <rect x="0" y="0" width="144" height="26" rx="13" fill="#16171A" stroke="#2A2C31"/>
+        <text x="72" y="17" fill="#A0A3AB" text-anchor="middle">PROACTIVE TELEMETRY</text>
+
+        <rect x="154" y="0" width="126" height="26" rx="13" fill="#16171A" stroke="#2A2C31"/>
+        <text x="217" y="17" fill="#A0A3AB" text-anchor="middle">AI DATA AGENTS</text>
+
+        <rect x="290" y="0" width="128" height="26" rx="13" fill="#16171A" stroke="#2A2C31"/>
+        <text x="354" y="17" fill="#A0A3AB" text-anchor="middle">EVENT PIPELINES</text>
+      </g>
+      <text x="28" y="150" fill="#6B6E76" font-size="13" font-weight="400">Real-time observability, event routing, anomaly detection, and automated workflows.</text>
+    </g>
   </g>
 </svg>

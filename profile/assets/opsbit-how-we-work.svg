@@ -1,0 +1,165 @@
+<svg width="1200" height="380" viewBox="0 0 1200 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hwwBg" x1="0" y1="0" x2="1200" y2="380" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#16171A"/>
+      <stop offset="1" stop-color="#111215"/>
+    </linearGradient>
+
+    <linearGradient id="hwwBorder" x1="0" y1="0" x2="1200" y2="380" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2A2C31"/>
+      <stop offset="0.5" stop-color="#3A3D45"/>
+      <stop offset="1" stop-color="#2A2C31"/>
+    </linearGradient>
+
+    <!-- Ember Flow Gradient -->
+    <linearGradient id="hwwFlowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF7A1A"/>
+      <stop offset="35%" stop-color="#FF3D7F"/>
+      <stop offset="70%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#05BDF3"/>
+    </linearGradient>
+
+    <filter id="hwwPulseGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes signalStream {
+        0% { stroke-dashoffset: 1000; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes nodeGlow {
+        0%, 100% { r: 6; opacity: 0.6; }
+        50% { r: 9; opacity: 1; }
+      }
+      @keyframes cardBorderPulse {
+        0%, 100% { stroke-opacity: 0.3; }
+        50% { stroke-opacity: 0.8; }
+      }
+      .signal-line {
+        stroke-dasharray: 80 180;
+        animation: signalStream 6s linear infinite;
+      }
+      .signal-line-glow {
+        stroke-dasharray: 40 220;
+        animation: signalStream 6s linear infinite;
+      }
+      .node-pulse-1 { animation: nodeGlow 3s ease-in-out infinite; animation-delay: 0s; }
+      .node-pulse-2 { animation: nodeGlow 3s ease-in-out infinite; animation-delay: 0.75s; }
+      .node-pulse-3 { animation: nodeGlow 3s ease-in-out infinite; animation-delay: 1.5s; }
+      .node-pulse-4 { animation: nodeGlow 3s ease-in-out infinite; animation-delay: 2.25s; }
+    </style>
+  </defs>
+
+  <!-- Container Box -->
+  <rect x="1" y="1" width="1198" height="378" rx="20" fill="url(#hwwBg)" stroke="url(#hwwBorder)" stroke-width="1.5"/>
+
+  <!-- Section Header -->
+  <g transform="translate(48, 42)">
+    <text x="0" y="0" fill="#6B6E76" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="2.5">HOW WE WORK</text>
+    <text x="0" y="28" fill="#FFFFFF" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800" letter-spacing="-0.5">Calm, structured, and fast. No unnecessary complexity.</text>
+  </g>
+
+  <!-- Animated Pipeline Flow Track (Runs Behind Cards) -->
+  <g transform="translate(48, 120)">
+    <!-- Base track line -->
+    <line x1="120" y1="0" x2="980" y2="0" stroke="#2A2C31" stroke-width="2" stroke-dasharray="4 4"/>
+    
+    <!-- Flowing Signal Animation -->
+    <line class="signal-line" x1="120" y1="0" x2="980" y2="0" stroke="url(#hwwFlowGrad)" stroke-width="2.5"/>
+    <line class="signal-line-glow" x1="120" y1="0" x2="980" y2="0" stroke="url(#hwwFlowGrad)" stroke-width="4" filter="url(#hwwPulseGlow)" opacity="0.8"/>
+  </g>
+
+  <!-- 4 STEP CARDS -->
+  <!-- STEP 01: LISTEN -->
+  <g transform="translate(48, 120)">
+    <!-- Node indicator on track -->
+    <circle cx="130" cy="0" r="14" fill="#16171A" stroke="#2A2C31" stroke-width="2"/>
+    <circle class="node-pulse-1" cx="130" cy="0" r="6" fill="#FF7A1A" filter="url(#hwwPulseGlow)"/>
+    <circle cx="130" cy="0" r="3" fill="#FFFFFF"/>
+
+    <!-- Card -->
+    <g transform="translate(0, 24)">
+      <rect width="260" height="194" rx="16" fill="#1D1F24" stroke="#2A2C31" stroke-width="1.2"/>
+      <text x="24" y="38" fill="#6B6E76" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700">01</text>
+      <text x="24" y="70" fill="#FFFFFF" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="700">Listen</text>
+      <text x="24" y="102" fill="#A0A3AB" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400" width="212">
+        <tspan x="24" dy="0">We start by listening to your</tspan>
+        <tspan x="24" dy="20">team, discovering hidden</tspan>
+        <tspan x="24" dy="20">friction, and auditing silent</tspan>
+        <tspan x="24" dy="20">security and design gaps.</tspan>
+      </text>
+      <rect x="24" y="174" width="48" height="2" rx="1" fill="#FF7A1A"/>
+    </g>
+  </g>
+
+  <!-- STEP 02: DESIGN -->
+  <g transform="translate(330, 120)">
+    <!-- Node indicator on track -->
+    <circle cx="130" cy="0" r="14" fill="#16171A" stroke="#2A2C31" stroke-width="2"/>
+    <circle class="node-pulse-2" cx="130" cy="0" r="6" fill="#FF3D7F" filter="url(#hwwPulseGlow)"/>
+    <circle cx="130" cy="0" r="3" fill="#FFFFFF"/>
+
+    <!-- Card -->
+    <g transform="translate(0, 24)">
+      <rect width="260" height="194" rx="16" fill="#1D1F24" stroke="#2A2C31" stroke-width="1.2"/>
+      <text x="24" y="38" fill="#6B6E76" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700">02</text>
+      <text x="24" y="70" fill="#FFFFFF" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="700">Design</text>
+      <text x="24" y="102" fill="#A0A3AB" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400">
+        <tspan x="24" dy="0">Clear, lean blueprints with</tspan>
+        <tspan x="24" dy="20">zero bloat. Resilient multi-</tspan>
+        <tspan x="24" dy="20">cloud patterns and strict</tspan>
+        <tspan x="24" dy="20">Zero Trust trust boundaries.</tspan>
+      </text>
+      <rect x="24" y="174" width="48" height="2" rx="1" fill="#FF3D7F"/>
+    </g>
+  </g>
+
+  <!-- STEP 03: BUILD -->
+  <g transform="translate(612, 120)">
+    <!-- Node indicator on track -->
+    <circle cx="130" cy="0" r="14" fill="#16171A" stroke="#2A2C31" stroke-width="2"/>
+    <circle class="node-pulse-3" cx="130" cy="0" r="6" fill="#8B5CF6" filter="url(#hwwPulseGlow)"/>
+    <circle cx="130" cy="0" r="3" fill="#FFFFFF"/>
+
+    <!-- Card -->
+    <g transform="translate(0, 24)">
+      <rect width="260" height="194" rx="16" fill="#1D1F24" stroke="#2A2C31" stroke-width="1.2"/>
+      <text x="24" y="38" fill="#6B6E76" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700">03</text>
+      <text x="24" y="70" fill="#FFFFFF" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="700">Build</text>
+      <text x="24" y="102" fill="#A0A3AB" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400">
+        <tspan x="24" dy="0">Fast, high-velocity execution.</tspan>
+        <tspan x="24" dy="20">100% Infrastructure as Code,</tspan>
+        <tspan x="24" dy="20">automated GitOps CI/CD, and</tspan>
+        <tspan x="24" dy="20">proactive security gates.</tspan>
+      </text>
+      <rect x="24" y="174" width="48" height="2" rx="1" fill="#8B5CF6"/>
+    </g>
+  </g>
+
+  <!-- STEP 04: STAY AHEAD -->
+  <g transform="translate(894, 120)">
+    <!-- Node indicator on track -->
+    <circle cx="130" cy="0" r="14" fill="#16171A" stroke="#2A2C31" stroke-width="2"/>
+    <circle class="node-pulse-4" cx="130" cy="0" r="6" fill="#05BDF3" filter="url(#hwwPulseGlow)"/>
+    <circle cx="130" cy="0" r="3" fill="#FFFFFF"/>
+
+    <!-- Card -->
+    <g transform="translate(0, 24)">
+      <rect width="260" height="194" rx="16" fill="#1D1F24" stroke="#2A2C31" stroke-width="1.2"/>
+      <text x="24" y="38" fill="#6B6E76" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700">04</text>
+      <text x="24" y="70" fill="#FFFFFF" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="700">Stay ahead</text>
+      <text x="24" y="102" fill="#A0A3AB" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400">
+        <tspan x="24" dy="0">Proactive telemetry, automated</tspan>
+        <tspan x="24" dy="20">observability, and continuous</tspan>
+        <tspan x="24" dy="20">verification that detects</tspan>
+        <tspan x="24" dy="20">anomalies before disruptions.</tspan>
+      </text>
+      <rect x="24" y="174" width="48" height="2" rx="1" fill="#05BDF3"/>
+    </g>
+  </g>
+</svg>
